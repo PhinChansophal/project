@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Print Document */
+body{position:relative; width:100%; margin:0; padding:0; color:#000;}
+.head-sticky, .head-bg-sticky, .foot, .bread_crum, .nexpre, .share-menu, .rictn, .share-content, .nav, .nav-mobile, .sub-menu, .info1_bg, .bar-container2{display:none !important;}
+
+.print{display:block; border-bottom:1px solid #ddd; overflow:hidden; padding:0 0 10px 0; margin:0 0 20px 0; text-align:right; position:relative;}
+.print span{position:absolute; left:0; bottom:0; font-size:90%;}
+
+.banner{margin:15px 0;}
+.banner img{width:100%;}
+video{background-color:#012254; height:250px;}
+
+.body-ctn{position:relative;}
+.body-ctn .qna .close{display:none;}
+.body-ctn .partner .close{display:none;}
+
+.main{width:100%; float:left; text-align:left;}
+.main h1{margin:0; padding:20px 0 15px; font-size:190%; color:#ca9812; font-weight:normal; text-transform:uppercase; line-height:140%;}
+.main h2{margin:0; padding:20px 0 5px; font-size:140%; color:#ca9812; font-weight:normal;}
+.main h3{margin:0; padding:20px 0 5px; font-size:120%; color:#193C6C; font-weight:normal;}
+.main h4{margin:0; padding:20px 0 5px; font-size:100%; color:#193C6C; font-weight:normal;}
+.main p{margin:0; padding:10px 0 5px; text-align:left;}
+.main .txt{margin:0; padding:0;}
+.main .date{margin:0; padding:0 0 5px; font-size:90%; text-indent:0;}
+.main .note{margin:0; padding:25px 0 5px; font-size:90%;}
+.main .nopadding {margin:0; padding:0 0 0 15px;}
+.main .nopadding li{margin:0; padding:0;}
+
+.main table{width:100%; margin:20px 0; padding:0; border-left:1px solid #E9ECEF; border-top:1px solid #E9ECEF;}
+.main table th{color:#193C6C; text-align:center; margin:0; padding:10px; font-weight:bold; font-size:110%; border-bottom:1px solid #E9ECEF; border-right:1px solid #E9ECEF;}
+.main table .sub_th{color:#193C6C; text-align:left; margin:0; padding:6px 10px; font-size:110%; border-bottom:1px solid #E9ECEF; border-right:1px solid #E9ECEF;}
+.main table td{margin:0; padding:6px 10px; border-bottom:1px solid #E9ECEF; border-right:1px solid #E9ECEF;}
+
+.main .s15{padding-top:15px;}
+.main .s10{padding-top:10px;}
+.main .s5{padding-top:5px;}
+
+.main ul, .main ol{margin:10px 0 10px 20px; padding:0;}
+.main ul ul, .main ol ul{margin:0 0 0 20px; padding:0;}
+.main li{padding:0;}
+
+input, textarea, option, select{color:#193C6C; font-family:Roboto, Verdana, sans-serif; font-size:100%; border:1px solid #eee;}
+a{color:#06c; text-decoration:none;}
+
+.main .imgbox{text-align:center; color:#647DA8; width:100%; position:relative; margin:20px 0;}
+.main .imgbox img, .main .imgbox a img{width:100%; border:none;}
+.main .imgbox .title{padding:5px 8px;}
+.main .imgbox_L{margin:20px 20px 10px 0; width:45%; float:left;}
+.main .imgbox_R{margin:20px 0 10px 20px; width:45%; float:right; clear:right;}
+
+.main .imgbox_profile{text-align:center; color:#647DA8; width:30%; max-width:200px; position:relative; float:right; margin:15px 0 20px 20px; font-size:90%; line-height:130%;}
+.main .imgbox_profile img{border-radius:200px; border:none; width:100%; margin-bottom:7px;}
+
+.main .remark{padding:15px 15px 15px 50px; margin:15px 0; position:relative; border:1px solid #ccc;}
+.main .remark .material-icons{position:absolute; top:15px; left:15px; color:f2c100;}
+
+/* format financial report */
+.main .tbl_fs td{background:none; padding-right:0; border-bottom:none;}
+.main .tbl_fs th{text-align:right;}
+.main .tbl_fs .border0{padding-bottom:8px;}
+.main .tbl_fs .border1{color:#193C6C; padding-bottom:8px; font-weight:bold; border-top:1px solid #E9ECEF;}
+.main .tbl_fs .border2{color:#193C6C; padding-top:10px; padding-bottom:5px; font-weight:bold; border-top:1px solid #E9ECEF; border-bottom:3px double #E9ECEF;}
+.main .tbl_fs .color1{color:#193C6C; padding-bottom:8px; font-weight:bold;}
+.main .tbl_fs .color2{color:#193C6C; padding-top:10px; padding-bottom:5px; font-weight:bold;}
+/* end financial report */
+
+/* image index */
+.imghome{position:relative; margin:20px 0 0; padding:10px 0; border-top:1px solid #ddd; z-index:0;}
+.imghome .img img, .imghome .img a img{margin:10px 15px 30px 0; width:150px; float:left; border:none;}
+.imghome .title{font-size:120%; color:#193C6C; margin:0 0 0 165px; padding:0; text-indent:0;}
+.imghome .date, .imghome .text{margin:0 0 0 165px; padding:0; text-align:justify; text-indent:0;}
+/* end image index */
+
+ul.listbox{margin:0 -3.5%; padding:0; list-style:none; position:relative; overflow:hidden;}
+ul.listbox li{width:43%; float:left; padding:30px 3.5% 30px;}
+ul.listbox li img, ul.listbox li a img{width:100%; border:none; border-radius:5px;}
+ul.listbox li .title{padding-top:10px; font-size:120%; line-height:150%; text-transform:uppercase;}
+ul.listbox li p{text-indent:0; padding-top:10px; text-align:left;}
+ul.listbox ul{margin:0; padding:0; list-style:disc;}
+ul.listbox ul li{width:100%; float:none; padding:0; margin:0 0 0 20px;}
+
+/* TAB BAR */
+ul.tab-bar, ul.tab-bar2{width:100%; list-style:none; margin:15px 0 0; padding:0; overflow:hidden;}
+ul.tab-bar .tab-bar-item, ul.tab-bar2 .tab-bar-item2{padding:12px 20px; float:left; margin:0; display:block; cursor:pointer; font-size:110%;}
+.tab-bar-hl, .tab-bar-hl2{font-weight:bold; border-bottom:3px solid #1b3351;}
+.tab-content, .tab-content2{padding:15px 20px 20px; margin-bottom:20px; overflow-x:auto; border:1px solid #E9ECEF;}
+.tab-content table, .tab-content2 table{margin-left:-19px; margin-right:-19px; width:calc(100% + 38px);}
+/* END TAB BAR */
+
+/* end CSS print */

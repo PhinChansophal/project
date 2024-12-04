@@ -1,0 +1,27 @@
+.deposits-info .category-items {
+    padding: 20px 0;
+}
+.deposits-info .category-items2{
+    color:rgb(30, 30, 185);
+    margin-left: 50px;
+    line-height: 1.6rem;
+    transform: translate(0 , -10px);
+}
+.deposits-info .category-items2 li:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+#apply{
+    margin-top: 30px;
+}
+#apply p{
+    font-size: 14px;
+}
+.paragrap{
+    font: 4rem;
+}
+.paragrap .title{
+    text-transform: uppercase;
+    margin-left: -1px;
+    color: #fff;
+}

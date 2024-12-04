@@ -1,0 +1,91 @@
+
+  
+  .container {
+    width: 45%;
+  }
+  
+  .title {
+    font-size: 2rem;
+    gap: 10px;
+    transform: translate(20px , -20px);
+    font-weight: bold;
+  }
+  
+  .title .trade {
+    color: #fff;
+  }
+  
+  .title .finance {
+    color: #ffa500; /* Gold color */
+  }
+  
+  .ratings {
+    transform: translate(157px , -40px);
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .ratings .stars {
+    color: #ffa500;
+  }
+  
+  .ratings .ratings-count {
+    margin-left: 5px;
+    font-size: 1.3rem;
+    color: rgb(37, 37, 172);
+  }
+    
+  .ratings .ratings-count:hover{
+    color: #fff;
+  }
+  
+  .content p {
+    transform: translate(157px , -50px);
+    padding: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    width: 100%;
+    color: #fff;
+  }
+  .ratings li{
+    color: #fff;
+    margin-left: 50px;
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+  .ratings .li-title{
+    padding: 1px;
+    margin-left: 55px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    width: 90%;
+    color: #fff;
+  }
+  .ratings2
+{
+    transform: translate(157px , -70px);
+    padding: 20px;
+    font-size: 1.5rem;
+}
+.ratings2 li{
+    color: #fff;
+    margin-left: 50px;
+    padding: 10px;
+    font-size: 1.1rem;   
+}
+.ratings2 .li-title{
+    padding: 1px;
+    margin-left: 55px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    width: 90%;
+    color: #fff;
+}
+ 
+.container2 {
+    transform: translate(0 , -30px);
+    width: 45%;
+}
+.container2 .content .caption {
+  margin-top: 30px;
+}

@@ -1,0 +1,795 @@
+
+.layout-container{
+    width: 100%;
+    background-color:#1b2d42;
+  }
+/* Img Shower */
+.img-show {
+    position: sticky;
+    width: 100%;
+    height: 419px;
+    background-color:#003366;
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden; /* Prevent overflow if the image is larger */
+}
+
+.img-show .picture {
+    width: 76%; /* Ensure the image scales responsively */
+    height: 800px; /* Prevent the image from overflowing the container */
+    object-fit: contain; /* Keeps the image's aspect ratio intact */
+}
+
+/* Credit Section */
+.deposits {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+/* Title */
+.deposits .title {
+    font-size: 15px;
+    margin-left: 160px;
+    color: #fff; /* Gold */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.deposits-apply{
+    background-color: #162233; /* Darker section background */
+    padding: 40px;
+    margin-top: 10px;
+    width: 45%;
+    color: #fff;
+    line-height: 1.6;
+    margin-left: 175px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #f1c40f; /* Gold border on the left */
+}
+.deposits-apply .apply {
+    font-size: 1rem;
+    text-align: center;
+    transform: translate(250px , 10px);
+}
+.deposits-apply .apply:hover{
+  text-decoration: underline;
+}
+.deposits-apply p{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.title i {
+    margin-left: 10px;
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #ccc;
+}
+.border{
+    width: 45%;
+    margin-left: 161px;
+    border: 1px solid color #333;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 20px;
+    margin-left: 134px;
+    padding:20px 0;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #ccc;
+    cursor: pointer;
+    margin:0  5px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+    color: #f1c40f; /* Gold on hover */
+}
+.breadcrumb span{
+    color: #747171;
+}
+/* Style for the Logo */
+.breadcrumb .logoAc {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; /* Circular logo */
+    display: inline-block;
+    margin-right: 10px; /* Space between logo and text */
+    vertical-align: middle; /* Align logo with breadcrumb text */
+    transform: translateY(3px); /* Slight vertical adjustment for alignment */
+}
+/* Adjust Logo Only (Optional) */
+.breadcrumb img.logoAc {
+    transform: translateY(-2px); /* Adjust vertical alignment of the logo */
+}
+
+/* Credits Section */
+.deposits-section {
+    background-color: #162233; /* Darker section background */
+    padding: 20px;
+    width: 45%;
+    margin-left: 175px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #f1c40f; /* Gold border on the left */
+}
+
+.deposits-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f1c40f; /* Gold color */
+    margin-bottom: 20px;
+}
+
+.deposits-info {
+    background-color: #1b2d42; /* Slightly lighter dark blue */
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.deposits-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd; /* Light gray text */
+}
+
+.deposits-info strong {
+    color: #ffffff; /* White for emphasis */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .credits-title {
+        font-size: 20px;
+    }
+
+    .breadcrumb {
+        font-size: 12px;
+    }
+
+    .credits-info p {
+        font-size: 14px;
+    }
+}
+.paragrap {
+    width: 45%; /* Limit the paragraph width to 45% of the parent container */
+    margin: 20px 0 20px 161px; /* Top, right, bottom, and left margins */
+    padding: 20px 0; /* Vertical padding for spacing within the paragraph */
+    color: #fff; /* White text color */
+    line-height: 1.8; /* Add line height for better readability */
+    font-size: 1.7rem; /* Font size for clarity */
+    margin-left: 175px;
+    font-weight: 600;
+}
+
+.paragrap li{
+    padding:6px 0;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.paragrap .service{
+  padding: 10px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.paragrap-service{
+  width: 45%; /* Limit the paragraph width to 45% of the parent container */
+  padding: 20px 0; /* Vertical padding for spacing within the paragraph */
+  color: #fff; /* White text color */
+  margin-top: -30px;
+  line-height: 1.8; /* Add line height for better readability */
+  font-size: 17px; /* Font size for clarity */
+  margin-left: 175px;
+}
+.paragrap-service li{
+  padding:6px 0;
+  margin-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.paragrap-service li:hover{
+  text-decoration: underline;
+}
+
+.paragrap-service .service{
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-shadow: rgba(0, 0, 0, 0.1);
+}
+/* Credits Section */
+.deposits-section2 {
+    background-color: #162233; /* Darker section background */
+    padding: 20px;
+    width: 45%;
+    margin-left: 175px;
+    border-radius: 8px;
+    border-right: 4px solid #f1c40f; /* Gold border on the left */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-left: 4px solid #f1c40f; /* Gold border on the left */
+}
+.deposits-section2 .deposits-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #f1c40f; /* Gold color */
+}
+.deposits-section2 span {
+    display: block; /* Ensure it behaves like a block element */
+    margin-top: -20px; /* Add a 10px margin at the top */
+    padding: 20px 0;
+    font-size: 14px; /* Optional: Adjust font size for consistency */
+    color: #ccc; /* Optional: Light gray for the date */
+}
+.deposits-section2 p{
+    color: #fff;
+    line-height: 1.8; /* Add line height for better readability */
+    font-size: 16px;
+}
+.deposits-section2 .p3{
+    padding: 20px 0;
+} 
+.deposits-section2 .p3 a{
+    color: #176fc7;
+    text-decoration: none;
+}
+.deposits-section2 .p3 a:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* General Styles */
+.deposits-services {
+    background-color: #162233; /* Dark blue background */
+    color: #ddd; /* Light text color */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 45%;
+    margin: 20px auto;
+    margin-left: 175px;
+    border-left: 4px solid #f1c40f; /* Gold border on the left */
+    border-right: 4px solid #f1c40f; /* Gold border on the left */
+}
+
+.deposits-services .title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f1c40f; /* Gold color */
+    text-align: center;
+    margin-bottom: 20px;
+    transform: translate(30px);
+    text-transform: uppercase;
+}
+
+/* Service Categories */
+.services-list {
+    margin-top: 20px;
+}
+
+.service-category {
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.category-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00aced; /* Light blue color */
+    margin-bottom: 10px;
+}
+
+.category-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category-items li , a{
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+    color: #fff; /* White text */
+}
+.category-items li a:hover{
+    text-decoration: underline;
+}
+.category-items li::before {
+    content: "•";
+    color: #f1c40f; /* Gold bullet points */
+    position: absolute;
+    left: 0;
+}
+
+/* Contact Section */
+.contact-support {
+    margin-top: 30px;
+    background-color: #1b2d42; /* Slightly lighter dark blue */
+    padding: 15px;
+    border-radius: 4px;
+    border-bottom: 4px solid #f1c40f; /* Gold border */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+}
+
+.contact-support i {
+    font-size: 24px;
+    color: #f1c40f;
+    margin-right: 15px;
+}
+
+.contact-support p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+    margin: 0;
+}
+.icon-menu {
+    display: flex;
+    margin-left: 150px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 50%;
+    
+  }
+
+  .icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 17px;
+    padding: 20px 0;
+    color: #fff; /* Light blue color for text and icons */
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .icon-item i {
+    font-size: 24px; /* Icon size */
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  .icon-item i:hover{
+    text-decoration: underline;
+  }
+  .icon-item span:hover{
+    color: #fff;
+    text-decoration: underline;
+  }
+  .border3{
+    width: 45%;
+    transform: translate(175px ,10px);
+  }
+  
+  /* Placeholder icons using pseudo-class (custom fonts can replace these) */
+  .icon-print::before {
+    content: "🖨️";
+  }
+  
+  .icon-share::before {
+    content: "🔗";
+  }
+  
+  .icon-brochure::before {
+    content: "📘";
+  }
+  
+  .icon-loan-request::before {
+    content: "📄";
+  }
+  
+  .icon-loan-calculator::before {
+    content: "🧮";
+  }
+  
+  .icon-ratings::before {
+    content: "⭐";
+  }
+  
+  .icon-qa::before {
+    content: "💬";
+  }
+  
+  
+/* Card Container */
+.credit .card {
+    width: 32%; /* Relative width for responsiveness */
+    height: 170px;
+    background-color: #1e2d44; /* Dark card background */
+    border-radius: 10px;
+    overflow: hidden;
+    transform: translate(-180px, -110px); /* Shifts the card left and up */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px 20px 20px 0; /* Adds space around the card */
+    float: right; /* Align the card to the right */
+    position: relative; /* Ensure relative positioning for internal elements */
+}
+
+/* Header Image */
+.header img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* Ensures the image covers the area */
+    display: block; /* Removes unwanted inline spacing */
+    position: relative;
+}
+
+/* Follow Button */
+.header .follow-btn {
+    position: absolute; /* Place the button over the image */
+    top: 120px; /* Adjust vertical position */
+    left: 10px; /* Adjust horizontal position */
+    width: 100px; /* Button width */
+    background-color: #00aaff; /* Button background */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Adjust padding */
+    font-size: 14px;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Share Button */
+.header .share-btn {
+    position: absolute; /* Place the button over the image */
+    top: 120px; /* Adjust vertical position */
+    left: 420px; /* Position to the right of the Follow button */
+    width: 100px; /* Button width */
+    height: 40px;
+    background-color: #fff; /* Button background */
+    color: #003366; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Adjust padding */
+    font-size: 14px;
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Button Hover Effects */
+.header .follow-btn:hover {
+    background-color: #0088cc; /* Darker blue for hover */
+}
+
+.header .share-btn:hover {
+    background-color: #3e3e3e; /* Darker gray for hover */
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #f5f5f5; /* Light gray background */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  text-align: left; /* Align text to the left */
+  font-family: Arial, sans-serif;
+  color: #333; /* Dark text */
+}
+
+.contact-section p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #003366; /* Dark blue text */
+  font-weight: bold;
+}
+
+/* Contact Items */
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-item i {
+  font-size: 20px; /* Icon size */
+  color: #007bff; /* Blue icon color */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.contact-item a {
+  font-size: 16px;
+  color: #007bff; /* Blue link color */
+  text-decoration: none;
+  margin-right: 5px; /* Space between phone numbers */
+}
+
+.contact-item a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Contact Support Section */
+.contact-support {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-support i {
+  font-size: 20px;
+  color: #007bff;
+}
+
+.border3 {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 20px 0;
+}
+
+/* Icon Menu */
+.icon-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.icon-item i {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.icon-item span {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Button */
+button {
+  background-color: #fff; /* White button background */
+  color: #003366; /* Dark blue text color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px;
+  font-size: 14px; /* Font size for the text */
+  width: 150px; /* Fixed width */
+  height: 40px; /* Fixed height */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button:hover {
+  background-color: #003366;
+  color: #fff; /* Darker green on hover */
+  font-weight: 200;
+}
+
+
+/* Layout for the right section */
+.layout-right {
+  transform: translate(125vh); /* Adjust this value as needed */
+  margin-top: -320vh; /* Adjust this value as needed */
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 470px; /* Maximum width for the right layout */
+  background-color: #f5f5f5; /* Light grey background */
+  border-left: 2px solid #e0e0e0; /* Optional left border */
+}
+
+/* Styles for individual cards */
+.layout-right .card {
+  background-color: #003366; /* Dark blue background for cards */
+  border: 1px solid #dcdcdc; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between cards */
+  padding: 15px; /* Padding inside cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: transform 0.3s; /* Animation on hover */
+}
+
+.layout-right .card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+/* Styles for text within cards */
+.layout-right .card p {
+  color: #fff; /* White text color for paragraphs inside cards */
+}
+
+/* Styles for the title in cards */
+.layout-right .title {
+  font-size: 1.5em; /* Larger font size for titles */
+  margin: 10px 0; /* Space around title */
+  color: #fff; /* White text color */
+  text-align: left; /* Left-align the title */
+}
+
+/* Styles for horizontal rule */
+.layout-right .border4 {
+  border: 1px solid #4CAF50; /* Green border for emphasis */
+  margin: 10px 0; /* Space around the border */
+}
+
+/* Styles for card header section */
+.layout-right .card-servicer {
+  text-align: center; /* Center-align images */
+}
+
+.layout-right .logo {
+  max-width: 80%; /* Limit logo size */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space below logo */
+}
+
+.layout-right .header-img {
+  width: 100%; /* Full width header image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Styles for the contact section */
+.layout-right .contact-section {
+  margin-top: 15px; /* Space above contact section */
+}
+
+/* Styles for contact items */
+.layout-right .contact-item {
+  display: flex; /* Align items horizontally */
+  align-items: center; /* Center items vertically */
+  margin: 5px 0; /* Space between contact items */
+}
+
+/* Styles for contact icons */
+.contact-item i {
+  margin-right: 8px; /* Space between icon and text */
+  color: #4CAF50; /* Icon color */
+}
+
+/* Styles for buttons */
+button {
+  background-color: #4CAF50; /* Green button background */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 15px; /* Padding inside button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1em; /* Font size for button */
+  margin-top: 10px; /* Space above button */
+  transition: background-color 0.3s; /* Transition effect */
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Styles for links */
+a {
+  color: #4CAF50; /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* General paragraph styles */
+p {
+  color: #fff; /* Set the text color to dark grey for general paragraphs */
+  font-size: 1em; /* Set the font size */
+  margin-bottom: 10px; /* Space below the paragraph */
+  line-height: 1.5; /* Line height for better readability */
+}
+
+/* Image styling */
+.card-servicer img {
+  width: 100%;
+  height: 150px; /* Fixed height for images */
+  padding: 10px; /* Space around images */
+}
+
+.footer_2 {
+    width: 100%;
+    color: #fff;
+    transform: translate(0 , 640px);
+    background-color: #1e2d44;
+    font-family: Arial, sans-serif;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+    text-align: center;
+    transform: translate(25px);
+}
+
+.footer-navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-navigation ul li a:hover {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+.footer-info, .footer-certifications {
+    display: flex;
+    align-items: center;
+    margin-left: 42%;
+    gap: 30px;
+    font-size: 13px;
+    text-align: center;
+    height: auto;
+}
+
+.footer-certifications img {
+    height: 30px;
+    margin: 5px;
+}
+
+.footer-social a img {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-social {
+    text-align: center;
+    margin-top: 20px;
+}
+.title3{
+    text-align: center;
+    font-size: 10px;
+    margin: 20px 0;
+    transform: translate(-5px);
+}
+.title:hover{
+    text-decoration: underline;
+    color: #00aaff;
+}
+.gridt-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.gridt-footer img{
+    width: 100px;
+}
+

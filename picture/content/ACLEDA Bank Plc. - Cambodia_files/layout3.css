@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+.banner{padding-left:0; padding-right:0;}
+p.bread_crum{margin-left:0; margin-right:0;}
+.main p{text-align:left;}
+.main .imgbox{width:calc(100% + 40px); margin-left:-20px; margin-right:-20px;}
+.main .imgbox_L, .main .imgbox_R{float:none; padding-top:10px; padding-bottom:10px;}
+.main .imgbox_profile{float:none; margin:20px auto; width:100%;}
+
+.main .vdobox{float:none; width:calc(100% + 40px); margin-left:-20px; margin-right:-20px;}
+.main .hlight{margin-left:-20px; margin-right:-20px; padding-left:18px;}
+
+.nexpre .pre a, .nexpre .nex a{float:none; width:100%; text-align:center;}
+.nexpre .nex a{padding:30px 0 0;}
+
+/* image index */
+.imghome .img img, .imghome .img a img{width:100%; float:none; margin-bottom:10px;}
+.imghome .title, .imghome .date, .imghome .text{margin-left:0;}
+.imghome .text{padding-bottom:5px;}
+/* end image index */
+
+.content2 div{padding:40px 0; font-size:90%;}
+.content2 div a{margin:0 20px;}
+.content2 div a img{padding-bottom:15px; width:30px;}
+
+.container{padding-bottom:62%;}
+.container iframe{left:-20px; width:calc(100% + 40px);}

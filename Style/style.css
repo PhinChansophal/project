@@ -1,0 +1,588 @@
+/* General Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #003366;
+  }
+  
+  .navigation {
+    background-color: #003366;
+    box-shadow: 0.5px 6px 9px black;
+    position: sticky; /* Make the navbar sticky */
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 100; /* Ensure it stays above other elements */
+}
+.navigation .container-width {
+    width: 90%;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .navigation  .logo img {
+    max-height: 50px;
+    width: auto;
+  }
+  
+  /* Navbar */
+  .navigation .navbar {
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .navigation .nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation .nav-item {
+    position: relative; /* For dropdown positioning */
+    margin-left: 20px;
+  }
+  
+  .navigation .nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .navigation .nav-link:hover {
+    color: #00aced; /* Light blue hover effect */
+  }
+  
+  /* Dropdown Menu */
+.navigation  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Align dropdown just below the parent */
+    left: 0;
+    background: white;
+    color: #333;
+    list-style: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+    padding: 10px 0;
+    margin:5px 0;
+    min-width: 200px;
+  }
+  
+  .dropdown-menu li {
+    padding: 5px 20px;
+  }
+  
+  .dropdown-menu li a {
+    text-decoration: none;
+    color: #003366;
+    display: block;
+    transition: background 0.3s ease;
+  }
+  
+ .navigation .dropdown-menu li a:hover {
+    background: #f1f1f1;
+    text-decoration: underline;
+  }
+  
+  .nav-item:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+  }
+  
+  /* Divider inside the dropdown */
+  .dropdown-menu hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+  }
+  
+  /* Language Flag */
+  .flag-cam img {
+    width: 25px;
+    height: auto;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .container-width {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar {
+      width: 100%;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    .nav-item {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .nav-link {
+      width: 100%;
+      padding: 10px 15px;
+      border-bottom: 1px solid #004080;
+    }
+  
+    .dropdown-menu {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      box-shadow: none;
+      border-radius: 0;
+    }
+  }
+.navbar2 {
+    background-color:#003366; /* Set a background color for the navbar */
+    padding: 15px 1px; /* Add some padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Create a subtle shadow */
+    z-index: 1000; /* Keep the navbar above other elements */
+}
+
+.navbar2 .nav-menu {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.navbar2 .nav-item {
+    left: 170px;
+    display: inline-block; /* Display items in a row */
+    position: relative; /* Position for dropdowns */
+}
+.navbar2 .nav-item a{
+    font-size: 11px;
+    color: #fff;
+    margin: 0 13px;
+    text-decoration: none;
+}
+.navbar2 .nav-item a:hover{
+  text-decoration: underline;
+  color: #00aaff;
+}
+ /* Dropdown Menu */
+.navbar2 .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  background: white;
+  color: #333;
+  list-style: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1000;
+  min-width: 210px;
+}
+
+.nav-item .dropdown-menu li a {
+  text-decoration: none;
+  color: #003366;
+  display: flex;
+  transition: background 0.3s ease;
+}
+
+
+/* Container for the image slider */
+.container-img{
+    padding: 10px;
+    position: sticky; /* Position relative for absolute positioning of children */
+    max-width: 100%; /* Full width */
+    overflow: hidden; /* Hide overflow to prevent images from showing outside */
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3);
+}
+/* Container for Image Slider */
+.container-img {
+    background-color: #0d2f4f;
+    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.3); /* Background color for the slider section */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Navigation Buttons Styles */
+.btn-container > button {
+    border-radius: 50%; /* Circular buttons */
+    font-size: 2rem; /* Icon size */
+    width: 50px;
+    height: 50px;
+    color: #969696ce;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    position: absolute; /* Positioned within the container */
+    bottom: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-container > button:hover {
+    box-shadow: 0 0 20px #fdffce; /* Glow effect on hover */
+    color: #030303;
+    background-color: #fff4b5; /* Light yellow background on hover */
+}
+
+.btn-container > button:first-child {
+    left: 25px; /* Left arrow position */
+    z-index: 100; /* Ensure button stays above images */
+}
+
+.btn-container > button:last-child {
+    right: 25px; /* Right arrow position */
+    z-index: 100;
+}
+
+/* Dots Navigation Styles */
+.dots-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(50px);
+    background: rgba(0, 0, 0, 0.4); /* Transparent background with blur */
+    border-radius: 100px;
+    padding: 5px 0.5rem;
+    gap: 0.5rem; /* Space between dots */
+}
+
+.dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(255, 225, 225, 0.3); /* Semi-transparent inactive color */
+    transition: all 0.2s ease-out;
+}
+
+.dot.active {
+    width: 40px;
+    border-radius: 100px; /* Elongated for active state */
+    background-color: rgba(255, 225, 225, 0.7); /* Highlighted active color */
+}
+
+/* Image Slide Styles */
+.image-slide {
+    position: relative;
+    width: 1100px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 5px; /* Rounded corners */
+    margin: 0 auto; /* Centered */
+}
+
+.image-slide img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain image aspect ratio */
+    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+}
+
+.image-slide > img:not(.active) {
+    left: -100%; /* Hide non-active images */
+}
+
+@keyframes nextOut {
+    from {
+      left: 0%;
+    }
+    to {
+      left: -100%;
+    }
+  }
+  @keyframes nextIn {
+    from {
+      left: 100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+  @keyframes prevOut {
+    from {
+      left: 0%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+  @keyframes prevIn {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0%;
+    }
+  }
+
+.content-nav {
+    margin-top: 1px;
+    background-color:#052a4d;
+    padding: 50px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .content-nav nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .content-nav nav ul li {
+    margin: 0 20px;
+  }
+  
+  .content-nav nav ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .content-nav nav ul li a img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .content-nav nav ul li a span {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+  .content-nav nav ul li a span:hover{
+    text-decoration: underline;
+  }
+
+/* Display Main Section */
+.display-main {
+    margin-top: 30px;
+    width: 80%;
+    margin-left: auto; /* Center the container horizontally */
+    margin-right: auto; /* Center the container horizontally */
+}
+
+/* Grid Layout for 3 Columns */
+.grid-2x4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+    gap: 40px; /* Space between grid items */
+}
+
+/* Video Link Card */
+.link-video-ace {
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Clip children */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.link-video-ace img {
+    width: 100%; /* Responsive image */
+    height: 400px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
+}
+
+.link-video-ace a {
+    display: block; /* Block display for full clickable area */
+    padding: 15px; /* Padding for the link text */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    color: #ccc; /* Link color */
+    font-weight: bold; /* Bold text */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.link-video-ace a:hover {
+    color: #fff; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-2x4 {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-2x4 {
+        grid-template-columns: 1fr; /* 1 column on very small screens */
+    }
+}
+
+
+/* General container styles */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Row styling */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+/* Column styling */
+.col-md-3 {
+    flex: 1 1 calc(25% - 20px); /* Responsive columns, 25% width minus gap */
+    max-width: calc(30% - 20px);
+    box-sizing: border-box;
+    height: 180px;
+    padding: 15px;
+    text-align: center;
+    background: #7394b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Column hover effect */
+.col-md-3:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.col-md-3 img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Heading styling */
+.col-md-3 h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.col-md-3 p {
+    font-size: 10px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 1 1 calc(50% - 20px); /* Adjust columns to 50% on smaller screens */
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-3 {
+        flex: 1 1 100%; /* Single column layout for very small screens */
+        max-width: 100%;
+    }
+}
+
+.footer {
+    width: 100%;
+    color: #fff;
+    padding:30px;
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-navigation ul {
+    list-style: none;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+}
+
+.footer-navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-navigation ul li a:hover {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+.footer-info, .footer-certifications {
+    display: flex;
+    align-items: center;
+    margin-left: 42%;
+    gap: 30px;
+    font-size: 13px;
+    text-align: center;
+    height: auto;
+}
+
+.footer-certifications img {
+    height: 30px;
+    margin: 5px;
+}
+
+.footer-social a img {
+    width: 25px;
+    height: 25px;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.footer-social a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-social {
+    text-align: center;
+    margin-top: 20px;
+}
+.title{
+    text-align: center;
+    font-size: 10px;
+    margin: 20px 0;
+}
+.title:hover{
+    text-decoration: underline;
+    color: #00aaff;
+}
+.gridt-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.gridt-footer img{
+    width: 100px;
+}

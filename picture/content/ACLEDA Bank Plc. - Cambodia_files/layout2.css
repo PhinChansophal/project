@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+body{background-color:#1B3351;}
+:target{top:-104px;} /*fixed for sticky head*/
+
+.head-bg-sticky{height:84px;}
+
+/* logo animation
+.head-ctn{padding:10px 20px 30px; text-align:center; height:45px;}
+.head-ctn a .logo{width:200px; padding-left:0;}
+.sticky{padding:8px 20px 20px; height:32px;}
+.sticky a .logo{width:140px;}
+end logo animation */
+
+/* origional logo */
+.head-ctn{padding:20px; text-align:center; height:45px;}
+.head-ctn a .logo{width:175px; padding-left:0;}
+.sticky{padding:14px 20px; height:32px;}
+.sticky a .logo{width:130px;}
+.bg-head-event{left: 50%; transform: translate(-50%);}
+/* end origional logo */
+
+.sticky .nav-icon-mobile{bottom:7px;}
+.nav-icon-mobile{display:block; position:absolute; bottom:20px; left:7px; color:#aaa; padding:10px; font-size:22px; cursor:pointer; transition:0.3s linear;}
+.nav-icon-mobile:hover{background-color:#122133; color:#fff;}
+.nav{height:40px; display:none;}
+.nav ul{padding-left:0;}
+.nav ul li, .nav-head, .language{display:none;}
+.nav ul .exchange{position:relative; padding:8px 20px 0;}
+
+.nav-mobile{margin:0; padding:0; list-style:none; background-color:#1B3351; top:0; left:0; width:85%; position:absolute; z-index:500;}
+.nav-mobile ul{margin:0; padding:0; list-style:none; display:none;}
+.nav-mobile li{padding:0; font-size:105%; position:relative;}
+.nav-mobile li li{padding-left:42px; letter-spacing:0; font-size:95%; line-height:170%;}
+.nav-mobile li a{display:block; padding:13px 20px; margin:0; color:#fff; background-color:#1B3351;}
+.nav-mobile li a i{vertical-align:middle; padding:0 20px 2px 0; font-size:22px;}
+.nav-mobile li a i.sub{float:right; padding:0;}
+.nav-mobile li li a{margin-right:0; padding:3px 20px 13px;}
+.nav-mobile li .close{cursor:pointer; position:absolute; right:0; top:13px; padding:10px 0 10px 10px; color:#fff;}
+.nav-mobile #active{color:#C29A39;}
+
+#about .nav-mobile .about,
+#search .nav-mobile .search,
+#digital .nav-mobile .digital,
+#card .nav-mobile .card,
+#personal .nav-mobile .persoanl,
+#business .nav-mobile .business,
+#productupdate .nav-mobile .productupdate,
+#special-offer .nav-mobile .special-offer,
+#investor-relation .nav-mobile .investor-relation{font-weight:bold; color:#C29A39;}
+
+.sub-menu{margin-right:0; margin-left:0;}
+.sub-menu div, .sub-menu li a{padding-right:20px;}
+
+.body-ctn{background-color:#fff; padding-top:30px;}
+
+/* banner */
+.banner-ctn div{font-size:150%; width:45%; top:20%; left:20px;}
+.banner-ctn div.r{right:20px;}
+.banner-ctn div p{padding-top:7px;}
+.banner img{height:260px;}
+/* end banner */
+
+/* banner2 */
+.banner2 img, .banner2 a img{height:260px;}
+/* end banner2*/
+
+.main{padding-bottom:40px; padding-left:0; float:none; width:calc(100% - 40px); margin-left:auto; margin-right:auto;}
+
+.rictn{width:auto; margin:10px 20px 60px; position:relative; float:none;}
+
+.content2 div{padding:50px 0;}
+.content2 div a{margin:0 30px;}
+.content2 div a img{width:35px;}

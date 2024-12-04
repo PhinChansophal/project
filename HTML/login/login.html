@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACLEDA Retail Internet Banking</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="en">
+    <div class="login_page">
+        <!-- Header -->
+        <div class="login_header">
+            <img src="/rib/resources/assets/img/logo/logo.png" alt="ACLEDA">
+            <h1>Retail Internet Banking</h1>
+            <div class="login_language dropdown">
+                <a href="#none" class="language">
+                    <span>English</span>
+                    <i class="dropdown-icon">&#9662;</i>
+                </a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="?setlanguage=kh"><img src="/rib/resources/assets/img/flags/kh.png" alt="KH">ភាសាខ្មែរ</a></li>
+                        <li><a href="?setlanguage=en"><img src="/rib/resources/assets/img/flags/en.png" alt="EN">English</a></li>
+                        <li><a href="?setlanguage=cn"><img src="/rib/resources/assets/img/flags/cn.png" alt="CN">中文</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Section -->
+        <div class="login_wrap">
+            <h2>Retail Internet Banking</h2>
+            <div class="login_opt">
+                <a href="javascript:" class="btn">Log In</a>
+                <div class="forgot-links">
+                    <a href="/rib/forgot/userid">Forgot User ID</a>
+                    <a href="/rib/forgot/password">Forgot Password</a>
+                </div>
+            </div>
+
+            <!-- Login Form -->
+            <form class="form_login" id="login-form" action="/rib/app_login" method="post">
+                <input type="hidden" name="_csrf" value="b02b5fb4-b911-402c-9851-8dea98bf5eb7">
+                <input type="text" placeholder="User ID" name="userid" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <button type="submit" class="btn">Log In</button>
+            </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="login_footer">
+            <ul>
+                <li><a href="https://www.acledabank.com.kh/kh/eng/usermanual" target="_blank">Help</a></li>
+                <li><a href="https://www.acledabank.com.kh/kh/eng/legal_privacy_notice" target="_blank">Privacy</a></li>
+                <li><a href="https://www.acledabank.com.kh/kh/eng/security_tip?#acleda_ib" target="_blank">Security</a></li>
+                <li><a href="javascript:" id="btn_push_browserreq">Browser Requirement</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Supported Browsers Modal -->
+    <div class="verifi_wrap" id="browserreq-wrap">
+        <a href="javascript:" class="btn_close">×</a>
+        <div class="verifi_inner">
+            <p class="title">Supported Browsers</p>
+            <p>Please use one of these options to improve your experience.</p>
+            <ul class="browser_support">
+                <li><img src='/rib/resources/assets/img/icon/bw_saferi.png' alt="Safari">Safari 11+</li>
+                <li><img src='/rib/resources/assets/img/icon/bw_firefox.png' alt="Firefox">Firefox 65+</li>
+                <li><img src='/rib/resources/assets/img/icon/bw_chrome.png' alt="Chrome">Chrome 65+</li>
+                <li><img src='/rib/resources/assets/img/icon/bw_ie.png' alt="Edge">Microsoft Edge</li>
+                <li><img src='/rib/resources/assets/img/icon/bw_opera.png' alt="Opera">Opera 50+</li>
+            </ul>
+            <p>Retail Internet Banking version: <span>1.0.241125</span></p>
+        </div>
+    </div>
+</body>
+</html>

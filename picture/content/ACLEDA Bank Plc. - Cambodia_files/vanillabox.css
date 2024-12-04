@@ -1,0 +1,101 @@
+/*
+ * Vanillabox
+ * (C) 2013 cocopon.
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/mit-license
+*/
+.vnbx * {box-sizing: content-box; -moz-box-sizing: content-box;}
+.vnbx-mask {
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+}
+.vnbx-frame {position: absolute;}
+.vnbx-button{
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+.vnbx-prev, .vnbx-next {visibility: hidden;}
+.vnbx-group .vnbx-prev, .vnbx-group .vnbx-next {visibility: visible;}
+.vnbx-pager {visibility: hidden;}
+.vnbx-group .vnbx-pager {visibility: visible;}
+.vnbx-container {overflow: hidden; position: relative;}
+.vnbx-content {
+  display:block;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+}
+.vnbx-content > img {vertical-align: middle;}
+.vnbx-content > iframe {border-width: 0; vertical-align: middle;}
+.vnbx-ios .vnbx-content {overflow: auto; -webkit-overflow-scrolling: touch;}
+.vnbx-ios .vnbx-content > iframe {display: block; height: 100%; width: 100%;}
+.vnbx-empty {height: 180px; width: 300px;}
+.vnbx-loading, .vnbx-error {height: 180px; width: 300px;}
+.vnbx-loading > img, .vnbx-loading > iframe, .vnbx-error > img, .vnbx-error > iframe {display: none; height: 180px; width: 300px;}
+.vnbx-mask {background:url(bg-mask.png) repeat;}
+.vnbx-frame {padding:0;}
+.vnbx-button {position: absolute;}
+.vnbx-button.vnbx-disabled {display: none;}
+.vnbx-close { position:fixed;
+  background-image: url("close0.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  height:45px;
+  right: 5px;
+  top: 5px;
+  width: 45px;
+  cursor:pointer;
+}
+.vnbx-close:hover {background-image: url("close1.svg");}
+.vnbx-prev, .vnbx-next {
+  height:100px;
+  width:43px;
+  cursor:pointer;
+  position:fixed;
+  top:50%;
+  margin-top:-50px;
+}
+.vnbx-prev {
+  background-image: url("prev0.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 28px;
+  left:6px;
+}
+.vnbx-prev:active, .vnbx-prev:hover {background-image: url("prev1.svg");}
+.vnbx-next {
+  background-image: url("next0.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 28px;
+  right:6px;
+}
+.vnbx-next:active, .vnbx-next:hover {background-image: url("next1.svg");}
+.vnbx-label {position: absolute;}
+.vnbx-title{ position:fixed;
+  color: #fff; line-height:140%;
+  left: 0; bottom:10px; font-size:90%;
+  text-align: center;
+  width:100%;
+}
+.vnbx-close-button-enabled .vnbx-title {padding-right:0;}
+.vnbx-pager {display:none;}
+.vnbx-container{text-align: center;}
+.vnbx-loading {
+  background-image: url("loading.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+.vnbx-error {
+  background-image: url("error.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:50px;
+}

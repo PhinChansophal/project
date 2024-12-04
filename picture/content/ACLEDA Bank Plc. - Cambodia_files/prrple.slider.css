@@ -1,0 +1,113 @@
+/******************** PRRPLE SLIDER ********************/
+
+/* MAIN */
+.slider{
+  display:block;
+  position:relative;
+  width:100%;
+  height:414px;
+  text-align:center;
+  overflow:hidden;
+  background-color:#E9ECEF;
+}
+.slider .slidetitle, .slider a .slidetitle{height:414px;}
+.slider .slider_area{
+  display:block;
+  position:relative;
+  overflow:hidden;
+  width:100%;
+  height:100%; max-width:1160px; margin:0 auto;
+}
+.slider .slides{
+  display:block;
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.slider .slide{
+  display:block;
+  position:relative;
+  float:left;
+  width:100%;
+  height:100%;
+}
+
+.slider .slide div{position:absolute; left:6%; top:25%; padding:0 0 0 60px; font-size:230%; line-height:140%; width:35%; color:#C29A39; font-weight:bold; text-align:left;}
+.slider .slide div.r{right:6%; left:auto; text-align:right;}
+.slider .slide div p{font-size:70%; margin:0; padding:10px 0 0; line-height:150%; color:#1B3351; text-transform:none; font-weight:normal; font-family:FiraSans;}
+
+.slider .slide:nth-child(even){}
+.slider.fade .slide{
+  display:block;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
+.slider.vertical .slide{float:none;}
+.slider .slider_clear{
+  display:block;
+  position:relative;
+  height:0;
+  clear:both;
+}
+.slider .animate{
+  -webkit-transition:all 500ms ease-in-out;
+  -moz-transition:all 500ms ease-in-out;
+  -o-transition:all 500ms ease-in-out;
+  transition:all 500ms ease-in-out;
+}
+
+
+/* ARROW NAVIGATION */
+.slider .slider_left,
+.slider .slider_right{
+  display:none;
+  position:absolute;
+  top:35%; padding:40px 30px;
+  left:0;
+  color:#aaa;
+  cursor:pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+}
+.slider .slider_right{left:auto; right:0;}
+.slider .slider_left:hover, .slider .slider_right:hover{color:#1B3351;}
+.slider .slider_left.inactive, .slider .slider_right.inactive{color:#122133; cursor:default;}
+
+/* DOT NAVIGATION */
+
+.slider .slider_dotwrap{
+  display:block;
+  position:absolute;
+  width:100%;
+  bottom:0;
+  padding:20px 0 15px;
+  left:0;
+  font-size:0;
+  line-height:0;
+  text-align:center;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+}
+.slider .slider_dot{
+  display:inline-block;
+  width:10px;
+  height:10px;
+  margin:0 5px;
+  border:1px solid #122133;
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  border-radius:50%;
+}
+.slider .slider_dot.current{background:#122133;}
+
+/* PLAY / PAUSE CONTROLS */
+.slider .slider_controls{display:none;}
+.slider .slider_play.hidden, .slider .slider_pause.hidden{display:none !important;}
